@@ -41,8 +41,8 @@
                         <p><br /></p>
                         <p>De continuar el inconveniente comuniquese con</p>
                         <p>Atención al cliente</p>
-                        <p><span class="glyphicon glyphicon-earphone"></span> <a class="tel-number" href="tel:01152999200">5299-9200</a></p>
-                        <p><span class="glyphicon glyphicon-envelope"></span> <a class="tel-number" href="tel:01152999200">atencionalcliente@antina.com.ar</a></p>
+                        <p><span class="glyphicon glyphicon-earphone"></span> <a href="tel:01152999200">5299-9200</a></p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> <a href="atencionalcliente@antina.com.ar">atencionalcliente@antina.com.ar</a></p>
                         
                     </div></div>
                     <div class="col-md-1"></div>
