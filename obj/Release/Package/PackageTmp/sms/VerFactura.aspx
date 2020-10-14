@@ -13,7 +13,7 @@
     <form id="form1" runat="server">
         <div class="header">
         </div>
-        <div style="height: 400px;">
+        <div style="height: 470px;">
             <img src="../img/logo.png" style="width: 35%" />
             <div id="loader" style="height: 300px;">
                 <div class="row">
@@ -21,7 +21,7 @@
                         <img src="../img/loader.gif" alt="" /></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12" align="center">descargando comprobante...</div>
+                    <div class="col-sm-12" align="center">Descargando Comprobante...</div>
                 </div>
             </div>
             <div class="divBody" id="divExito" style="height: 300px;">
@@ -45,8 +45,8 @@
                             </p>
                             <p>De continuar el inconveniente comuniquese con</p>
                             <p>Atención al cliente</p>
-                            <p><span class="glyphicon glyphicon-earphone"></span><a href="tel:01152999200">5299-9200</a></p>
-                            <p><span class="glyphicon glyphicon-envelope"></span><a href="atencionalcliente@antina.com.ar">atencionalcliente@antina.com.ar</a></p>
+                            <p><span class="glyphicon glyphicon-earphone"></span> <a href="tel:01152999200">5299-9200</a></p>
+                            <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto: atencionalcliente@antina.com.ar">atencionalcliente@antina.com.ar</a></p>
 
                         </div>
                     </div>

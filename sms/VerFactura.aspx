@@ -15,13 +15,13 @@
         </div>
         <div style="height: 470px;">
             <img src="../img/logo.png" style="width: 35%" />
-            <div id="loader" style="height: 300px;">
+            <div id="loader" style="height: 100px;">
                 <div class="row">
                     <div class="col-sm-12" align="center">
                         <img src="../img/loader.gif" alt="" /></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12" align="center">Descargando Comprobante...</div>
+                    <div class="col-sm-12" align="center" style="color:forestgreen;">Descargando Comprobante</div>
                 </div>
             </div>
             <div class="divBody" id="divExito" style="height: 300px;">

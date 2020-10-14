@@ -23,8 +23,10 @@ function OnSuccessDescarga(response) {
     var link = document.createElement('a');
     if (response.d == "http://facturas.antina.com.ar/files/No se encontraron Datos") {
         $("#DivError").text("Ocurrio un error!");
+        ocultarLoader();
     }
     else {
+        ocultarLoader();
         link.href = response;
         link.download = response;
         link.dispatchEvent(new MouseEvent('click'));
