@@ -19,10 +19,7 @@
                 <div class="row">
                     <div class="col-sm-12" align="center">
                         <img src="../img/loader.gif" alt="" /></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12" align="center" style="color:forestgreen;">Descargando Comprobante</div>
-                </div>
+                </div>               
             </div>
             <div class="divBody" id="divExito" style="height: 300px;">
                 <div>
@@ -35,24 +32,29 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <div class="alert alert-danger" role="alert">
-                            <b>Error en la descarga: </b>
-                            <div id="divTextoError">
-                                No se encontro el Comprobante!
-                            </div>
+                            <p class="h3"><b>Error en la descarga: </b></p>
+                            <p class="h3" id="divTextoError">No se encontro el Comprobante!</p>
 
-                            <p>
                                 <br />
-                            </p>
-                            <p>De continuar el inconveniente comuniquese con</p>
-                            <p>Atención al cliente</p>
-                            <p><span class="glyphicon glyphicon-earphone"></span> <a href="tel:01152999200">5299-9200</a></p>
-                            <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto: atencionalcliente@antina.com.ar">atencionalcliente@antina.com.ar</a></p>
+                          
+                            <p class="h3">De continuar el inconveniente comuniquese con</p>
+                            <p class="h3">Atención al cliente</p>
+                            <p class="h3"><span class="glyphicon glyphicon-earphone"></span> <a href="tel:01152999200">5299-9200</a></p>
+                            <p class="h3"><span class="glyphicon glyphicon-envelope"></span> <a href="mailto: atencionalcliente@antina.com.ar">atencionalcliente@antina.com.ar</a></p>
 
                         </div>
                     </div>
                     <div class="col-md-1"></div>
                 </div>
             </div>
+
+     <div class="divBody" id="divConfirmacion" style="height: 300px;">
+        <div class="center">
+            <p class="h3">Usted se ha adherido a factura electrónica por SMS exitosamente!</p>
+            <p class="h3">Recibirá su factura por este medio todos los meses.</p>
+        </div>
+    </div>
+
         </div>
 
 

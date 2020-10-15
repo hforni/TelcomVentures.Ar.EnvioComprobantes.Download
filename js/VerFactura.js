@@ -1,4 +1,4 @@
-﻿var $divError,  $divEspera, $divExito;
+﻿var $divError, $divEspera, $divExito, $divConfirmacion;
 
 function BajarFactura() {
     // var param = getParameterByName('param');    
@@ -15,6 +15,8 @@ function BajarFactura() {
             $divError.show();
             ocultarLoader();
             $divExito.hide();
+            $divConfirmacion.hide();
+
         }
     });  
 }
@@ -51,21 +53,20 @@ function isEmpty(val) {
     return (val === undefined || val == null || val.length <= 0) ? true : false;
 }
 
-function AdherirmeFactura()
-{
-    alert(window.param);
-}
+ 
 
 
 function assignHTMLControls() {
     $divError = $("#divError");
     $divExito = $("#divExito");
+    $divConfirmacion = $("#divConfirmacion");
 }
 
 $(document).ready(function () {
     assignHTMLControls();
     $divError.hide();
     $divExito.hide();
+    $divConfirmacion.hide();
     ocultarLoader();
     var idComprobante = GetParameterValues('param');
     if (isNullOrEmpty(idComprobante))
@@ -151,4 +152,30 @@ function ArmaTelmplate(idComprobante)
     }
 
  
+}
+
+function AdherirmeFactura()
+{
+    mostrarLoader();
+    var url = "/Api/SMS?idComprobante=" + window.param;
+    $.ajax({
+        type: "POST",
+        url: url,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: OnSuccessAdherir,
+        failure: function (response) {
+            $divError.show();
+            ocultarLoader();
+            $divExito.hide();
+        }
+    }); 
+}
+
+function OnSuccessAdherir(response) {
+    $divConfirmacion.show();
+    $divError.hide();
+    ocultarLoader();
+    $divExito.hide();
+
 }

@@ -17,10 +17,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>10/13/2020 12:16:36</publishTime>
+      <publishTime>10/15/2020 10:37:35</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>10/13/2020 12:16:35</publishTime>
+      <publishTime>10/15/2020 10:37:35</publishTime>
     </File>
     <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
       <publishTime>03/15/2019 11:59:54</publishTime>
@@ -29,10 +29,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/16/2019 12:33:30</publishTime>
     </File>
     <File Include="bin/Configuracion.dll">
-      <publishTime>08/26/2020 09:45:45</publishTime>
+      <publishTime>10/14/2020 13:19:16</publishTime>
     </File>
     <File Include="bin/Configuracion.pdb">
-      <publishTime>08/26/2020 09:45:45</publishTime>
+      <publishTime>10/14/2020 13:19:16</publishTime>
     </File>
     <File Include="bin/Dapper.Contrib.dll">
       <publishTime>09/27/2019 09:55:50</publishTime>
@@ -71,10 +71,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/NegocioSQL.dll">
-      <publishTime>10/13/2020 12:15:14</publishTime>
+      <publishTime>10/15/2020 10:14:32</publishTime>
     </File>
     <File Include="bin/NegocioSQL.pdb">
-      <publishTime>10/13/2020 12:15:14</publishTime>
+      <publishTime>10/15/2020 10:14:32</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>04/22/2019 01:06:16</publishTime>
@@ -233,10 +233,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/13/2020 08:50:32</publishTime>
     </File>
     <File Include="bin/SQLData.dll">
-      <publishTime>10/13/2020 12:14:46</publishTime>
+      <publishTime>10/15/2020 10:14:12</publishTime>
     </File>
     <File Include="bin/SQLData.pdb">
-      <publishTime>10/13/2020 12:14:46</publishTime>
+      <publishTime>10/15/2020 10:14:12</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>11/28/2018 13:00:36</publishTime>
@@ -251,28 +251,28 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/11/2014 16:26:04</publishTime>
     </File>
     <File Include="bin/TelcomVentures.Ar.EnvioComprobantes.Download.dll">
-      <publishTime>10/13/2020 12:15:27</publishTime>
+      <publishTime>10/15/2020 10:37:23</publishTime>
     </File>
     <File Include="bin/TelcomVentures.Ar.EnvioComprobantes.Download.pdb">
-      <publishTime>10/13/2020 12:15:27</publishTime>
+      <publishTime>10/15/2020 10:37:23</publishTime>
     </File>
     <File Include="bin/TelcomVentures.Ar.EnvioComprobantes.Download.XmlSerializers.dll">
-      <publishTime>10/13/2020 12:15:54</publishTime>
+      <publishTime>10/15/2020 10:37:25</publishTime>
     </File>
     <File Include="bin/TelcomVentures.AR.Logueo.dll">
-      <publishTime>09/23/2020 17:44:13</publishTime>
+      <publishTime>10/14/2020 13:19:16</publishTime>
     </File>
     <File Include="bin/TelcomVentures.AR.Logueo.pdb">
-      <publishTime>09/23/2020 17:44:13</publishTime>
+      <publishTime>10/14/2020 13:19:16</publishTime>
     </File>
     <File Include="bin/TelnetData.dll">
-      <publishTime>10/13/2020 12:15:07</publishTime>
+      <publishTime>10/15/2020 10:14:26</publishTime>
     </File>
     <File Include="bin/TelnetData.dll.config">
       <publishTime>04/15/2020 14:48:04</publishTime>
     </File>
     <File Include="bin/TelnetData.pdb">
-      <publishTime>10/13/2020 12:15:07</publishTime>
+      <publishTime>10/15/2020 10:14:26</publishTime>
     </File>
     <File Include="bin/UODOTNET.dll">
       <publishTime>04/15/2020 14:48:04</publishTime>
@@ -323,7 +323,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/22/2020 17:26:14</publishTime>
     </File>
     <File Include="Descarga/index.aspx">
-      <publishTime>10/10/2020 19:59:12</publishTime>
+      <publishTime>10/15/2020 10:12:19</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>09/22/2020 17:26:14</publishTime>
@@ -365,10 +365,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/02/2020 08:53:25</publishTime>
     </File>
     <File Include="js/VerFactura.js">
-      <publishTime>10/02/2020 10:15:05</publishTime>
+      <publishTime>10/14/2020 15:54:17</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>10/13/2020 12:16:06</publishTime>
+      <publishTime>10/15/2020 10:37:26</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>09/22/2020 17:27:28</publishTime>
@@ -467,7 +467,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/22/2020 17:27:35</publishTime>
     </File>
     <File Include="sms/VerFactura.aspx">
-      <publishTime>10/10/2020 19:59:12</publishTime>
+      <publishTime>10/15/2020 10:31:02</publishTime>
     </File>
     <File Include="ViewSwitcher.ascx">
       <publishTime>09/22/2020 17:27:34</publishTime>
@@ -476,7 +476,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/23/2020 11:58:53</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/02/2020 11:25:32</publishTime>
+      <publishTime>10/15/2020 10:35:38</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -35,20 +35,18 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <div class="alert alert-danger" role="alert">
-                        <b>Error en la descarga: </b>
+                       <p class="h3"> <b>Error en la descarga: </b></p>
                         <br />
                         <br />
-                        <div id="divTextoError">
-                            No se encontro el Comprobante!
-                        </div>
-
-                        <p>
-                            <br />
+                        <p class="h3" id="divTextoError"> 
+                            No se encontro el Comprobante!                       
                         </p>
-                        <p>De continuar el inconveniente comuniquese con</p>
-                        <p>Atención al cliente</p>
-                        <p><span class="glyphicon glyphicon-earphone"></span> <a href="tel:01152999200">5299-9200</a></p>
-                        <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto: atencionalcliente@antina.com.ar">atencionalcliente@antina.com.ar</a></p>
+                            <br />
+                      
+                        <p class="h3">De continuar el inconveniente comuniquese con</p>
+                        <p class="h3">Atención al cliente</p>
+                        <p class="h3"><span class="glyphicon glyphicon-earphone"></span> <a href="tel:01152999200">5299-9200</a></p>
+                        <p class="h3"><span class="glyphicon glyphicon-envelope"></span> <a href="mailto: atencionalcliente@antina.com.ar">atencionalcliente@antina.com.ar</a></p>
 
                     </div>
                     <div class="col-md-1"></div>
@@ -62,8 +60,8 @@
                 <div class="col-md-10 text-center">
                     <br />
                     <br />
-                    <p>La descarga se realizó correctamente.</p>
-                    <p>Si no puede visualizar el comprobante<a href="#" target="_blank" id="myLink"> haga click aquí</a></p>
+                    <p class="h3">La descarga se realizó correctamente.</p>
+                    <p class="h3">Si no puede visualizar el comprobante<a href="#" target="_blank" id="myLink"> haga click aquí</a></p>
                     <br />
                     <br />
                     <br />

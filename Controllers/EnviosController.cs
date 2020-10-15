@@ -29,48 +29,48 @@ namespace TelcomVentures.Ar.EnvioComprobantes.Download.descarga
             try
             {
                 var ret = ws.ConsumeAsync<IEnumerable<EnviosDTO>>($"/api/envios/GetbyMailid?mailid=" + idmail, token).Result;
-            if (ret != null)
-            {
-                if (ret.Count() > 0)
+                if (ret != null)
                 {
+                    if (ret.Count() > 0)
+                    {
 
-                    foreach (EnviosDTO envios in ret)
-                    {
-                        numfac = envios.Numfac;
-                        abonado = envios.NroAbonado;
-                        cate = envios.TipoCate;
+                        foreach (EnviosDTO envios in ret)
+                        {
+                            numfac = envios.Numfac;
+                            abonado = envios.NroAbonado;
+                            cate = envios.TipoCate;
                         }
-                    WsGeneracionComprobantes.WSGeneracionComprobantes wsg = new WsGeneracionComprobantes.WSGeneracionComprobantes();
-                    string nombreArchivo = wsg.SGenerarComprobanteruta(numfac, oConf.GetValue("RutaComprobantes").ToString());
-                    if (nombreArchivo == "No se encontraron Datos")
-                    {
-                        Logger.Logueo("No se pudo generar el comprobante idmail: " + idmail + " comprobante: " + numfac + " abonado: " + abonado + " cate: " + cate, Level.ErrorLog);
-                        urlDescarga = "err2";
+                        WsGeneracionComprobantes.WSGeneracionComprobantes wsg = new WsGeneracionComprobantes.WSGeneracionComprobantes();
+                        string nombreArchivo = wsg.SGenerarComprobanteruta(numfac, oConf.GetValue("RutaComprobantes").ToString());
+                        if (nombreArchivo == "No se encontraron Datos")
+                        {
+                            Logger.Logueo("No se pudo generar el comprobante idmail: " + idmail + " comprobante: " + numfac + " abonado: " + abonado + " cate: " + cate, Level.ErrorLog);
+                            urlDescarga = "err2";
+                        }
+                        else
+                        {
+                            Logger.Logueo("Comprobante generado idmail: " + idmail + " comprobante: " + numfac + " abonado: " + abonado + " cate: " + cate, Level.InformacionLog);
+                            urlDescarga = oConf.GetValue("UrlComprobantes").ToString() + nombreArchivo;
+                            foreach (EnviosDTO envio in ret)
+                            {
+                                envio.LastEditedDate = System.DateTime.Now; ;
+                                envio.LastEditedUser = "descarga";
+                                envio.cant_descargas = envio.cant_descargas + 1;
+                                this.UpdateEnvio(envio);
+                            }
+                        }
                     }
                     else
                     {
-                        Logger.Logueo("Comprobante generado idmail: " + idmail + " comprobante: " + numfac + " abonado: " + abonado + " cate: " + cate, Level.InformacionLog);
-                        urlDescarga = oConf.GetValue("UrlComprobantes").ToString() + nombreArchivo;
-                        foreach (EnviosDTO envio in ret)
-                        {
-                            envio.LastEditedDate = System.DateTime.Now; ;
-                            envio.LastEditedUser = "descarga";
-                            envio.cant_descargas = envio.cant_descargas + 1;
-                            this.UpdateEnvio(envio);
-                        }
+                        Logger.Logueo("No se econtro el envio " + idmail, Level.ErrorLog);
+                        urlDescarga = "err1";
                     }
                 }
                 else
                 {
-                    Logger.Logueo("No se econtro el envio " + idmail, Level.ErrorLog);
-                    urlDescarga = "err1";
+                    Logger.Logueo("No se econtrol el envio " + idmail, Level.ErrorLog);
                 }
-            }
-            else
-            {
-                Logger.Logueo("No se econtrol el envio " + idmail, Level.ErrorLog);
-            }
-            return this.Json(urlDescarga);
+                return this.Json(urlDescarga);
             }
             catch (Exception ex)
             {
