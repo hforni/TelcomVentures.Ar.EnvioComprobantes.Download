@@ -241,12 +241,33 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <Content Include="bin\TelcomVentures.Ar.EnvioComprobantes.Download.dll.config" />
     <Content Include="bin\TelnetData.dll.config" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap-grid.css.map" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap.css.map" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap.min.css.map" />
+    <Content Include="js\bootstrap-4.4.1-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap-4.4.1-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap-4.4.1-dist\js\bootstrap.js.map" />
+    <Content Include="js\bootstrap-4.4.1-dist\js\bootstrap.min.js.map" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap-grid.css" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap-grid.min.css" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap-reboot.css" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap.css" />
+    <Content Include="js\bootstrap-4.4.1-dist\css\bootstrap.min.css" />
+    <Content Include="js\bootstrap-4.4.1-dist\js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap-4.4.1-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap-4.4.1-dist\js\bootstrap.js" />
+    <Content Include="js\bootstrap-4.4.1-dist\js\bootstrap.min.js" />
     <Content Include="js\index.js" />
+    <Content Include="js\jquery-latest.js" />
     <Content Include="js\VerFactura.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
