@@ -17,7 +17,7 @@ namespace TelcomVentures.Ar.EnvioComprobantes.Download.Controllers
             WsGeneracionComprobantes.WSGeneracionComprobantes wsg = new WsGeneracionComprobantes.WSGeneracionComprobantes();
             string nombreArchivo = wsg.SGenerarComprobanteruta(param, oConf.GetValue("RutaComprobantes").ToString());
             if (nombreArchivo == "No se encontraron Datos")
-            {             
+            {
                 urlDescarga = "err2";
             }
             else
@@ -26,11 +26,5 @@ namespace TelcomVentures.Ar.EnvioComprobantes.Download.Controllers
             }
             return this.Json(urlDescarga);
         }
-           
-                  
-                
-         
-
-       
     }
 }
