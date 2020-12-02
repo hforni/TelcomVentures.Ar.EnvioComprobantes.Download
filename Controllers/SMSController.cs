@@ -17,7 +17,7 @@ namespace TelcomVentures.Ar.EnvioComprobantes.Download.Controllers
             SmsDTO smsDTO = new SmsDTO();
             try
             { 
-            string idComprobanteDesencriptado = tn.Decrypt(param.Replace("SLASH", "/").Replace("PLUS", "+"), "Un5e_223f12").Trim();
+            string idComprobanteDesencriptado = tn.Decrypt(param.Replace("SLASH", "/").Replace("PLUS", "+"), "Un5e_223f12").Trim();            
             string tipoTexto = idComprobanteDesencriptado.Substring(idComprobanteDesencriptado.LastIndexOf("TEXTO"));
             idComprobanteDesencriptado = idComprobanteDesencriptado.Substring(0, idComprobanteDesencriptado.IndexOf("TEXTO"));
             smsDTO.IdComprobante = idComprobanteDesencriptado;

@@ -203,6 +203,7 @@
     <Content Include="bin\TelnetData.pdb" />
     <Content Include="bin\UODOTNET.dll" />
     <Content Include="bin\WebGrease.dll" />
+    <Content Include="ChatBot\DescargaComprobante.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -266,6 +267,7 @@
     <Content Include="js\bootstrap-4.4.1-dist\js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap-4.4.1-dist\js\bootstrap.js" />
     <Content Include="js\bootstrap-4.4.1-dist\js\bootstrap.min.js" />
+    <Content Include="js\DescargaComprobante.js" />
     <Content Include="js\index.js" />
     <Content Include="js\jquery-latest.js" />
     <Content Include="js\VerFactura.js" />
@@ -303,14 +305,27 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </Content>
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\web.config" />
     <None Include="Web References\WsGeneracionComprobantes\WSGeneracionComprobantes.disco" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\BundleConfig2.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ChatBot\DescargaComprobante.aspx.cs">
+      <DependentUpon>DescargaComprobante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChatBot\DescargaComprobante.aspx.designer.cs">
+      <DependentUpon>DescargaComprobante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ChatBotController.cs" />
     <Compile Include="Controllers\EnviosController.cs" />
     <Compile Include="Controllers\SMSComprobanteController.cs" />
     <Compile Include="Controllers\SMSController.cs" />
@@ -355,7 +370,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Data\" />
     <Folder Include="log\" />
+    <Folder Include="Views\ChatBot\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
